@@ -1,4 +1,4 @@
-pick_a_color_4web
+Today in history_4web
 
 
 		英文项目名称，必需取名合理，是目录名亦是.py後端程序（此行完成後应删）
