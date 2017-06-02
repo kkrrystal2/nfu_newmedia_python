@@ -9,12 +9,12 @@ Today in history_4web
 		中文简介项目内容（此行完成後应删）
 
 ## 输入：
-用户输入变数1（型态1）丶变数2（型态2）丶
+日期
 ## 输出：
 用户得到输出结果为：历史上的今天发生了什么
 ## 从输入到输出，本组作品使用了：
 ### 模块
-* [folium](https://github.com/python-visualization/folium)
+* [requests](http://api.juheapi.com/japi/toh?key=1a21b2aace47c4fc71c446f7b025fe47&v=1.0&month=11&day=1)
 * [opencv](http://opencv.org/)
 ### 数据
 * [简中CLDR localenames](https://github.com/unicode-cldr/cldr-localenames-modern/blob/master/main/zh-Hans/territories.json)
