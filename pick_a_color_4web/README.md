@@ -15,7 +15,7 @@ Today in history_4web
 ## 从输入到输出，本组作品使用了：
 ### 模块
 * [requests](http://api.juheapi.com/japi/toh?key=1a21b2aace47c4fc71c446f7b025fe47&v=1.0&month=11&day=1)
-* [opencv](http://opencv.org/)
+
 ### 数据
 * [简中CLDR localenames](https://github.com/unicode-cldr/cldr-localenames-modern/blob/master/main/zh-Hans/territories.json)
 ### API
