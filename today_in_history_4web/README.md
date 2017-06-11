@@ -16,16 +16,17 @@ today_in_history_4web
 ## 从输入到输出，本组作品使用了：
 ### 模块
 * [requests](http://api.juheapi.com/japi/toh?key=4bc027ace0535ecf7e935870a1b9deef&v=1.0&month=11&day=1)
+* [request](http://www.python-requests.org/en/master/)
 
 ### 数据
 * [聚合数据](https://www.juhe.cn/)
-* [request](http://www.python-requests.org/en/master/)
+
 
 
 
 ### API
 * [github](http://api.juheapi.com/japi/toh?key=4bc027ace0535ecf7e935870a1b9deef&v=1.0&month=11&day=1)
-* [历史上的今天](https://www.juhe.cn/docs/api/id/63) 限量访问100次
+* [历史上的今天](https://www.juhe.cn/docs/api/id/63) 限量访问100次 Key:4bc027ace0535ecf7e935870a1b9deef
 
 ## 作者成员：
 见[_team_.tsv](https://github.com/kkrrystal2/nfu_newmedia_python/blob/master/_team_.tsv)
