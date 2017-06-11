@@ -22,5 +22,5 @@ today_in_history_4web
 * [github](http://api.juheapi.com/japi/toh?key=4bc027ace0535ecf7e935870a1b9deef&v=1.0&month=11&day=1)
 
 ## 作者成员：
-见[_team_.tsv](_team_/_team_.tsv)
+见[_team_.tsv](https://github.com/kkrrystal2/nfu_newmedia_python/blob/master/_team_.tsv)
 
