@@ -1,16 +1,32 @@
+
 {% extends 'base.html' %}
+
+
 
 {% block body %}
 
-<h2>{{ the_title }}</h2>
+<br><br><br><br><br><br><br><br><br>
 
-<form method='get' action='/pick_a_color'>
-<table>
-<th colspan="2">请选取日期：</th>
-<tr><td>日期: </td><td><input type="color" name="user_color" /></td></tr>
+<h1 align="center" >历史上的今天</h1>
+
+<br/>
+
+<form method='POST' action='/content'>
+
+<table align="center">
+
+	<tr>
+
+		<td><input name='date' type='TEXT' width='60' placeholder="请输入date" style="width:250px;height:25px;">&nbsp;<input value='查询' type='SUBMIT' ></td>
+
+	</tr>
+
 </table>
-<p>准备就绪后, 单击此按钮：</p>
-<p><input value='搞吧！' type='SUBMIT'></p>
+
+
+
 </form>
+
+
 
 {% endblock %}
