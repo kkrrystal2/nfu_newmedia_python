@@ -4,7 +4,7 @@ today_in_history_4web
 
 		
 # 简介 
-历史上的今天所发生的事情，操练Python语言开发练习：使用flask
+查询历史上的今天所发生的事情，操练Python语言开发练习：使用flask
 
 
 		
