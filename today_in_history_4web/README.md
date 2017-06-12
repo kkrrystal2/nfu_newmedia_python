@@ -4,7 +4,7 @@ today_in_history_4web
 
 		
 # 简介 
-查询历史上的今天所发生的事情，操练Python语言开发练习：使用flask
+查询你所输入的这一天历史上发生的大事件，操练Python语言开发练习：使用flask
 
 
 		
@@ -12,7 +12,7 @@ today_in_history_4web
 ## 输入：
 日期（月、日）
 ## 输出：
-用户得到输出结果为：历史上的今天发生了什么
+用户得到输出结果为：历史上的某一天发生了什么
 ## 从输入到输出，本组作品使用了：
 ### 模块
 * [request](http://www.python-requests.org/en/master/)     
