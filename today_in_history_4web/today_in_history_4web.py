@@ -12,7 +12,7 @@ for item in date:
     item_dict = {x.split(':')[0]:x.split(':')[1] for x in item_data}
     data_all.append(item_dict)
 
-date_list=[x['城市'] for x in data_all]
+date_list=[x['日期'] for x in data_all]
 
 @app.route('/pick_date', methods=['POST'])
 
