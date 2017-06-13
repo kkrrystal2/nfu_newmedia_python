@@ -1,32 +1,33 @@
- # -*- coding: utf-8 -*- 
-from flask import Flask, render_template, request, escape
-from vsearch import search4letters
+# -*- coding: utf-8 -*- 
+from flask import Flask, render_template, request, escape, url_for, send_file
+from lookup_longitude_latitude import get_img
 
 app = Flask(__name__)
 
+with open ('data/guangdong.txt','r',encoding='utf8')as data:
+    gd=data.readlines()
+data_all=[]
+for item in gd:
+    item_data = item.strip().split(' ')
+    item_dict = {x.split(':')[0]:x.split(':')[1] for x in item_data}
+    data_all.append(item_dict)
 
-def log_request(req: 'flask_request', res: str) -> None:
-    """Log details of the web request and the results."""
-    with open('vsearch.log', 'a', encoding='utf8') as log:
-        print(req.form, req.remote_addr, req.user_agent, res, file=log, sep='|')
+city_list=[x['城市'] for x in data_all]
 
+@app.route('/pick_city', methods=['POST'])
 
-@app.route('/search4', methods=['POST'])
 def do_search() -> 'html':
+
     """Extract the posted data; perform the search; return results."""
-    phrase = request.form['phrase']
-    letters = request.form['letters']
-    
+
+    city=request.form['city']
+
     title = '以下是您的结果：'
-    results = search4letters(phrase, letters)
-    log_request(request, results)
+    results = get_img(city)
     return render_template('results.html',
                            the_title=title,
-                           the_phrase=phrase,
-                           the_letters=letters,
-                           the_results=results,
-                           		#flask.render_template 函数把results.html模版（输出），其中模版中the_color的值，用color这变数之值
-                           )
+                           the_city=city,
+                           the_results=results)
 
 
 @app.route('/')
@@ -34,24 +35,22 @@ def do_search() -> 'html':
 def entry_page() -> 'html':
     """Display this webapp's HTML form."""
     return render_template('entry.html',
-                           the_title='欢迎来到网上 历史上的今天查询！')
+                           the_title='广东省城市地图！',
+						   the_user_city=city_list)
+
+						   
+#这里我们接受一个 filename 檔名变量，http://127.0.0.1:5000/img/檔名
+@app.route('/maps/<filename>')  #filename
+def get_image(filename):        #filename 
+    #傳送mimetype="image/"
+    #假定都是image/png格式
 
 
-@app.route('/viewlog')
-def view_the_log() -> 'html':
-    """Display the contents of the log file as a HTML table."""
-    contents = []
-    with open('vsearch.log') as log:
-        for line in log:
-            contents.append([])
-            for item in line.split('|'):
-                contents[-1].append(escape(item))
-    titles = ('表单内容', '访问者IP', '浏览器', '运行结果')
-    return render_template('viewlog.html',
-                           the_title='查看日志',
-                           the_row_titles=titles,
-                           the_data=contents,)
 
+    import os.path
+    
+    return send_file(os.path.join("maps",filename), mimetype='image/png')
 
 if __name__ == '__main__':
+
     app.run(debug=True)
