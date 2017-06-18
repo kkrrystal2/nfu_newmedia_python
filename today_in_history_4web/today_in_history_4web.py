@@ -1,6 +1,5 @@
 # -*- coding: utf-8 -*- 
 from flask import Flask, render_template, request, escape, url_for, send_file
-from lookup_longitude_latitude import get_img
 
 app = Flask(__name__)
 
