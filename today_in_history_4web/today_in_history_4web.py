@@ -2,11 +2,7 @@
 
 from flask import Flask, render_template, request, escape
 
-from date_query import today_in_history
-
 app = Flask(__name__)
-
-
 
 @app.route('/content', methods=['POST'])
 
