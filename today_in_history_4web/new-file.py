@@ -12,7 +12,7 @@ def get_history(date):
                 if date in line:
                     date_code = line.split('=')[0].strip()
         #历史上的今天api            
-        url = (http://api.juheapi.com/japi/toh?Key=4bc027ace0535ecf7e935870a1b9deef&v=1.0&month=11&day=1.format)
+        url = (http://api.juheapi.com/japi/toh?Key=4bc027ace0535ecf7e935870a1b9deef&v=1.0&month=11&day=1.format(code=data_code))
 
         response = urllib.request.urlopen(url)
         today_in_history_html = response.read()
