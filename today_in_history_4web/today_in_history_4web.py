@@ -3,7 +3,7 @@ from flask import Flask, render_template, request, escape, url_for, send_file
 
 app = Flask(__name__)
 
-with open ('data/date.txt','r',encoding='utf8')as data:
+with open ('today_in_history_4web','r',encoding='utf8')as data:
     date=data.readlines()
 data_all=[]
 for item in date:
@@ -13,7 +13,7 @@ for item in date:
 
 date_list=[x['日期'] for x in data_all]
 
-@app.route('/pick_date', methods=['POST'])
+@app.route('today_in_history_4web', methods=['POST'])
 
 def do_search() -> 'html':
 
