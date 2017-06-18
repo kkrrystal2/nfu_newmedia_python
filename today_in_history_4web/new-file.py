@@ -6,7 +6,7 @@ def get_history(date):
          Welcome to today_in_history System!       
     ************************************************''')
     try:
-        with open('date.txt', 'r', encoding='utf-8') as f:
+        with open('today_in_history_4web', 'r', encoding='utf-8') as f:
             lines = f.readlines()
             for line in lines:
                 if date in line:
