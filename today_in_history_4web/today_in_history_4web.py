@@ -1,6 +1,5 @@
 # -*- coding: utf-8 -*- 
 from flask import Flask, render_template, request, escape, url_for, send_file
-from today_in_history_4web import get_today_in_history
 
 app = Flask(__name__)
 
