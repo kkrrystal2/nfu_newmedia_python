@@ -20,7 +20,7 @@ def get_history(date):
         #print(json_data)
      
             
-     return(_id,title,pic,year,month,day,des,lunar,)
+        return[_id,title,pic,year,month,day,des,lunar,]
 
     except NameError :
         print('不存在此日期')
