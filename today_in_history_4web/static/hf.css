@@ -1,13 +1,13 @@
 body {
-  font-family:      Verdana, Geneva, Arial, sans-serif;
+  font-family:      sans-serif;
   font-size:        medium;
   background-color: tan;
   margin-top:       5%;
   margin-bottom:    5%;
   margin-left:      10%;
   margin-right:     10%;
-  padding:          10px 10px 10px 10px;  
-}       
+  padding:          10px 10px 10px 10px;
+}
 a {
   text-decoration:  none; 
   font-weight:      600; 
@@ -18,13 +18,13 @@ a:hover {
 a img {
   border:           0;
 }
-h2 {         
+h2 {
   font-size:        150%;
 }
 table {
   margin-left:      20px;
   margin-right:     20px;
-  caption-side:     bottom;
+  caption-side:     top;
   border-collapse:  collapse;
 }
 td, th {
@@ -33,11 +33,11 @@ td, th {
 }
 .copyright {
   font-size:        75%;
-  font-style:       italic;
+  font-style:       upright letters;
 }
 .slogan {
   font-size:        75%;
-  font-style:       italic;
+  font-style:       upright letters;
 }
 .confirmentry {
   font-weight:      600; 
@@ -47,7 +47,7 @@ td, th {
 
 table {
 font-size:          1em;
-background-color:   #fafcff;
+background-color:   tan;
 border:             1px solid #909090;
 color:              #2a2a2a;
 padding:            5px 5px 2px;
@@ -55,7 +55,7 @@ border-collapse:    collapse;
 }
 
 td, th {
-border:             thin dotted gray;
+border:             thin dotted black;
 }
 
 /*** Inputs ***/
