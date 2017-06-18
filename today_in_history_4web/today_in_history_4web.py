@@ -1,17 +1,8 @@
 # -*- coding: utf-8 -*- 
 from flask import Flask, render_template, request, escape, url_for, send_file
+from today_in_history_4web import get_today_in_history
 
 app = Flask(__name__)
-
-with open ('today_in_history_4web','r',encoding='utf8')as data:
-    date=data.readlines()
-data_all=[]
-for item in date:
-    item_data = item.strip().split(' ')
-    item_dict = {x.split(':')[0]:x.split(':')[1] for x in item_data}
-    data_all.append(item_dict)
-
-date_list=[x['日期'] for x in data_all]
 
 @app.route('today_in_history_4web', methods=['POST'])
 
