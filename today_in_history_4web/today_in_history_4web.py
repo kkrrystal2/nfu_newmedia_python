@@ -7,7 +7,7 @@ app = Flask(__name__)
 @app.route('/content', methods=['POST'])
 
 def show_content() -> 'html':
-    city = request.form['city']
+    date = request.form['date']
     results = today_in_history
     return render_template('results.html',
                            the_results=results,
