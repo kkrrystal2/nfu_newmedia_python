@@ -1,137 +1,78 @@
-body {
 
-  font-family:      sans-serif;
+@charset "UTF-8";  
 
-  font-size:        150%; 
+	  html,body{
 
-  background:       url(9325622954447638.jpg ) center center;
+            height: 100%;
 
-  color:            black;
+            color:white;
 
-  background-size:  cover;
+            font-family:sans-serif;
 
-  margin-top:       5%;
+        }
 
-  margin-bottom:    5%;
+        body{
 
-  margin-left:      10%;
+            background:url(9325622954447638.jpg) center center;
 
-  margin-right:     10%;
+            background-size:cover;
 
-  padding:          10px 10px 10px 10px;
+            margin:0;
 
-}
+            padding:0;
 
-a {
+            position:relative;
 
-  text-decoration:  none; 
+        }
 
-  font-weight:      600; 
+        #container{
 
-}
+            width:100%;
 
-a:hover {
+            text-align:center;
 
-  text-decoration:  underline;
+            position:absolute;
 
-}
+            top:50%;
 
-a img {
+            transform: translateY(-50%);
 
-  border:           0;
+        }
 
-}
+        a{
 
-h2 {
+         color:whitesmoke;
 
-  font-size:        180%;
+            border:1px solid whitesmoke;
 
-}
+            border-radius:3px;
 
-table {
+            padding:6px 16px;
 
-  margin-left:      20px;
+            text-decoration:none;
 
-  margin-right:     20px;
+            
 
-  caption-side:     bottom;
+        }
 
-  border-collapse:  collapse;
+#login_form input {
 
-}
+    border: 0;
 
-td, th {
+    BACKGROUND-COLOR: transparent;
 
-  padding:          5px;
+    BORDER-BOTTOM: #ffffff 1px solid;
 
-  text-align:       left;
+    BORDER-LEFT: #ffffff 1px solid;
 
-}
+    BORDER-RIGHT: #ffffff 1px solid;
 
+    BORDER-TOP: #ffffff 1px solid;
 
+    COLOR: #ffffff;
 
-/*** Tables ***/
+    HEIGHT: 25px;
 
-
-
-table {
-
-font-size:          1em;
-
-background-color:   transparent;
-
-border:             2px solid whitesmoke;
-
-border-style:       ridge;
-
-color:              white;
-
-padding:            5px 5px 2px;
-
-border-collapse:    collapse;
-
-}
-
-
-
-td, th {
-
-border:             thin dotted gray;
-
-}
-
-
-
-/*** Inputs ***/
-
-input[type=text] {
-
-  font-size:        100%;
-
-  width:            30em;
-
-}
-
-input[type=submit] {
-
-  font-size:        100%;
-
-  border-top-left-radius:0.5em;
-
-  border-top-right-radius:0.5em;
-
-  border-bottom-left-radius:0.5em;
-
-  border-bottom-right-radius:0.5em;
-
-  box-shadow:0px 1px 2px rgba(0,0,0,0.2);
-
-  color:#595959;
-
-}
-
-select {
-
-  font-size:        125%;
+    font-size: 12pt
 
 }
