@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*- 
 
 from flask import Flask, render_template, request, escape
-from today_in_history_4web import get_weather, get_form
+
 
 app = Flask(__name__)
 
@@ -10,7 +10,6 @@ kkkf=[]
 for i in range(len(aa['result'])):
     kki=aa['result'][i]['des']
     kkkf.append(kki)
-
 
 
 
