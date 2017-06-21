@@ -17,7 +17,7 @@ for i in range(len(aa['result'])):
 
 
 
-@app.route('/content', methods=['POST'])
+@app.route('/pick_a_date', methods=['POST'])
 def show_content() -> 'html':
     """Extract the posted data; perform the search; return results."""
     date = request.form['date']
