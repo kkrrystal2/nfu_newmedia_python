@@ -1,15 +1,15 @@
 # -*- coding: utf-8 -*- 
-
 from flask import Flask, render_template, request, escape
-
 
 app = Flask(__name__)
 
 
-
-
 import requests
 r = requests.get('http://api.juheapi.com/japi/toh?key=4bc027ace0535ecf7e935870a1b9deef&v=1.0&month=11&day=1')
+gg=r.text
+aa= eval(gg)
+aa['result'][0]['des']
+len(aa['result'])
 kkkf=[]
 for i in range(len(aa['result'])):
     kki=aa['result'][i]['des']
