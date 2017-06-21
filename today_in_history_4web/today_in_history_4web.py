@@ -5,7 +5,7 @@ app = Flask(__name__)
 
 
 import requests
-r = requests.get('http://api.juheapi.com/japi/toh?key=4bc027ace0535ecf7e935870a1b9deef&v=1.0&month=11&day=1')
+r = requests.get('http://api.juheapi.com/japi/toh?key=4bc027ace0535ecf7e935870a1b9deef&v=1.0&month={m}&day={d}'format(m=month,d=day))
 gg=r.text
 aa= eval(gg)
 aa['result'][0]['des']
