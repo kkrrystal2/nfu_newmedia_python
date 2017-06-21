@@ -1,11 +1,20 @@
- # -*- coding: utf-8 -*- 
+# -*- coding: utf-8 -*- 
 
 from flask import Flask, render_template, request, escape
+from today_in_history_4web import get_weather, get_form
 
 app = Flask(__name__)
 
-@app.route('/content', methods=['POST'])
 
+kkkf=[]
+for i in range(len(aa['result'])):
+    kki=aa['result'][i]['des']
+    kkkf.append(kki)
+
+
+
+
+@app.route('/content', methods=['POST'])
 def show_content() -> 'html':
     date = request.form['date']
     results = today_in_history
