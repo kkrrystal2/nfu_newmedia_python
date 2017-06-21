@@ -1,80 +1,63 @@
+
 body {
 
-@charset "UTF-8";  
+  font-family:      Verdana, Geneva, Arial, sans-serif;
 
-	  html,body{
+  font-size:        150%;
 
-            height: 100%;
+  background:       url(长城.jpg) center center;
 
-            color:black;
+  color:            white;
 
-            font-family:sans-serif;
+  background-size:  cover;
 
-        }
+  margin-top:       5%;
 
-        body{
+  margin-bottom:    5%;
 
-            background:url(长城.jpg) center center;
+  margin-left:      10%;
 
-            background-size:cover;
+  margin-right:     10%;
 
-            margin:0;
+  padding:          10px 10px 10px 10px;
 
-            padding:0;
+}
 
-            position:relative;
+a {
 
-        }
+  text-decoration:  none; 
 
-        #container{
+  font-weight:      600; 
 
-            width:100%;
+}
 
-            text-align:center;
+a:hover {
 
-            position:absolute;
+  text-decoration:  underline;
 
-            top:50%;
+}
 
-            transform: translateY(-50%);
+a img {
 
-        }
+  border:           0;
 
-        a{
+}
 
+h2 {
 
+  font-size:        180%;
 
-            color:whitesmoke;
+}
 
-            border:1px solid whitesmoke;
+table {
 
-            border-radius:3px;
+  margin-left:      20px;
 
-            padding:6px 16px;
+  margin-right:     20px;
 
-            text-decoration:none;
+  caption-side:     bottom;
 
-        }
-
-login_form input {
-
-    border: 0;
-
-    BACKGROUND-COLOR: transparent;
-
-    BORDER-BOTTOM: #ffffff 1px solid;
-
-    BORDER-LEFT: #ffffff 10px solid;
-
-    BORDER-RIGHT: #ffffff 10px solid;
-
-    BORDER-TOP: #ffffff 1px solid;
-
-    COLOR: #ffffff;
-
-    HEIGHT: 25px;
-
-    font-size: 12pt
+  border-collapse:  collapse;
 
 }
 
