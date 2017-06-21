@@ -17,8 +17,8 @@ aa['result'][0]['des']
 len(aa['result'])
 kkkf=[]
 for i in range(len(aa['result'])):
-    kki=aa['result'][i]['des']
-    kkkf.append(kki)
+kki=aa['result'][i]['des']
+kkkf.append(kki)
 
     date = request.form['date']
     results = today_in_history
