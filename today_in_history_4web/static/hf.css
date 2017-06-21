@@ -4,11 +4,11 @@ body {
   background:       url(长城.jpg) center center;
   color:            white;
   background-size:  cover;
-  margin-top:       5%;
-  margin-bottom:    5%;
+  margin-top:       20%;
+  margin-bottom:    40%;
   margin-left:      10%;
   margin-right:     10%;
-  padding:          10px 60px 10px 10px;
+  padding:          10px 10px 10px 10px;
 }
 a {
   text-decoration:  none; 
