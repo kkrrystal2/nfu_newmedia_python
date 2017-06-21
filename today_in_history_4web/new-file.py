@@ -18,4 +18,4 @@ def get_history(date):
         return [_id,title,pic,year,month,day,des,lunar,]
 
     except NameError :
-        print('存在此日期')
+        print('不存在此日期')
