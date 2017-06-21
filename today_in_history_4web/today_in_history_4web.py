@@ -31,4 +31,4 @@ def entry_page() -> 'html':
 
 if __name__ == '__main__':
 
-    app.run(debug=False)
+    app.run(debug=true)
