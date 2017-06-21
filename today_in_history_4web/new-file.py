@@ -5,12 +5,7 @@ def get_history(date):
     ************************************************
          Welcome to today_in_history System!       
     ************************************************''')
-    try:
-        with open('today_in_history_4web', 'r', encoding='utf-8') as f:
-            lines = f.readlines()
-            for line in lines:
-                if date in line:
-                    date_code = line.split('=')[0].strip()
+
         #历史上的今天api            
         url = ('http://api.juheapi.com/japi/toh?Key=4bc027ace0535ecf7e935870a1b9deef&v=1.0&month=11&day=1'.format(month,day))
 
