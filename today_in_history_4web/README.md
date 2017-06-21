@@ -15,7 +15,8 @@ today_in_history_4web
 用户得到输出结果为：历史上的某一天发生了什么
 ## 从输入到输出，本组作品使用了：
 ### 模块
-* [request](http://www.python-requests.org/en/master/)     
+* [request](http://www.python-requests.org/en/master/)  
+* [Flask](http://www.pythondoc.com/flask/)
 
 ### 数据
 * [聚合数据](https://www.juhe.cn/)
