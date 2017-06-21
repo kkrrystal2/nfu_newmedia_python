@@ -19,6 +19,7 @@ for i in range(len(aa['result'])):
 
 @app.route('/content', methods=['POST'])
 def show_content() -> 'html':
+    """Extract the posted data; perform the search; return results."""
     date = request.form['date']
     results = today_in_history
     return render_template('results.html',
@@ -31,11 +32,9 @@ def show_content() -> 'html':
 
 
 @app.route('/')
-
 @app.route('/entry')
 
 def entry_page() -> 'html':
-
     """Display this webapp's HTML form."""
 
     return render_template('entry.html',
