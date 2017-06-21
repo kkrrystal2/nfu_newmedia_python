@@ -3,7 +3,6 @@ body {
   font-size:        150%;
   background:       url(长城.jpg) center center;
   color:            white;
-  background-size:  cover;
   margin: 0;
   padding: 0;
 }
@@ -33,7 +32,7 @@ table {
 
   margin-right:     20px;
 
-  caption-side:     bottom;
+  caption-side:     mediate;
 
   border-collapse:  collapse;
 
