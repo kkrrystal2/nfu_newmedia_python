@@ -12,7 +12,7 @@ today_in_history_4web
 ## 输入：
 日期（月、日）
 ## 输出：
-用户得到输出结果为：历史上的某一天发生了什么
+用户得到输出结果为：历史上的某一天发生了什么(人物、地点、具体事例）
 ## 从输入到输出，本组作品使用了：
 ### 模块:
 * [request](http://www.python-requests.org/en/master/)  
@@ -20,9 +20,6 @@ today_in_history_4web
 
 ### 数据:
 * [聚合数据](https://www.juhe.cn/)
-
-
-
 
 ### API:
 * [聚合数据 历史上的今天](http://api.juheapi.com/japi/toh?key=4bc027ace0535ecf7e935870a1b9deef&v=1.0&month=11&day=1) 限量访问100次
