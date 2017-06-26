@@ -30,3 +30,5 @@ today_in_history_4web
 ## 作者成员：
 见[_team_.tsv](https://github.com/kkrrystal2/nfu_newmedia_python/blob/master/_team_.tsv)
 
+## Weep App 动作描述：
+
