@@ -18,7 +18,7 @@ def show_content() -> 'html':
 
                            )
 
-    the_date = date,)
+
 >>>>>>> eba8f4a2a14ea7f5661ad328619401ef8fc37e33
 
 
