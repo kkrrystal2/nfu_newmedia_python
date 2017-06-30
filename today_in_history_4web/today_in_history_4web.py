@@ -13,7 +13,7 @@ def show_content() -> 'html':
     results = get_data(month,day)
     return render_template('results.html',
                            the_results=results,
-<<<<<<< HEAD
+
                            #the_history = results[1],
 
                            )
