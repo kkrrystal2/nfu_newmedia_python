@@ -10,35 +10,22 @@
 <table align="center">
 
 	<tr>
-		<td><input name='month_day' type='text' width='90' 
-			   placeholder="请输入所要查找的日期" 
+		<td><input name='month' type='text' width='90' 
+			   placeholder="请输入所要查找的日期（月）" 
+			   style="width:250px;height:25px;">;
+	</tr>
+</table>
+
+<table align="center">
+
+	<tr>
+		<td><input name='day' type='text' width='90' 
+			   placeholder="请输入所要查找的日期（天）" 
 			   style="width:250px;height:25px;">;<input value='查询'
 
 			   type='SUBMIT' ></td>
 	</tr>
 </table>
-</form>
-
-<form method='POST' action='/content'>
-<table align="center">
-
-	<tr>
-
-
-	<tr>
-
-		<td><input name='user_date' type='date' width='90' 
-
-			   placeholder="请输入所要查找的日期(月、日）" 
-
-			   style="width:250px;height:25px;">&nbsp;<input value='查询'
-
-			   type='SUBMIT' ></td>
-
-	</tr>
-
-</table>
-	
 </form>
 
 {% endblock %}
