@@ -4,8 +4,8 @@ def get_data(month,day):
         contents=[]
         url=("http://api.juheapi.com/japi/toh?key=1a21b2aace47c4fc71c446f7b025fe47&v=1.0&month=11&day=1".format(month,day))
         url=("http://api.juheapi.com/japi/toh?key=1a21b2aace47c4fc71c446f7b025fe47&v=1.0&month=1&day=1".format(month,day))
-	url=("http://api.juheapi.com/japi/toh?key=1a21b2aace47c4fc71c446f7b025fe47&v=1.0&month=1&day=2".format(month,day))
-	url=("http://api.juheapi.com/japi/toh?key=1a21b2aace47c4fc71c446f7b025fe47&v=1.0&month=1&day=14".format(month,day))
+        url=("http://api.juheapi.com/japi/toh?key=1a21b2aace47c4fc71c446f7b025fe47&v=1.0&month=1&day=2".format(month,day))
+        url=("http://api.juheapi.com/japi/toh?key=1a21b2aace47c4fc71c446f7b025fe47&v=1.0&month=1&day=14".format(month,day))
         import requests
         r = requests.get(url)
         data=r.json()
