@@ -3,6 +3,8 @@ import requests, json
 def get_data(month,day):
         contents=[]
         url=("http://api.juheapi.com/japi/toh?key=1a21b2aace47c4fc71c446f7b025fe47&v=1.0&month={m}&day={d}".format(month,day))
+        month = month_day[0]
+        day = month_day[1]
         import requests
         r = requests.get(url)
         data=r.json()
