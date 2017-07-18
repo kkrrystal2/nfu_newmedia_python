@@ -21,8 +21,9 @@ today_in_history_4web
 * [Flask](http://www.pythondoc.com/flask/)
 
 ### 数据
-* [聚合数据](https://www.juhe.cn/)
-
+* 来源：[聚合数据](https://www.juhe.cn/)
+* 使用for循环与切片 
+ 
 
 
 
