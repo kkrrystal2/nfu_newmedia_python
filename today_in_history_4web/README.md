@@ -39,7 +39,7 @@ today_in_history_4web
 
 2. 前端浏览器web 请求：访问 http://127.0.0.1:5000/ 启动前端web 请求
 
-3. 後端伺服器web 响应：[ today_in_history_4web.py ]today_in_history_4web.py ) 中 执行 了@app.route('/') 下的 entry_page()函数，以HTML模版[templates/entry.html](templates/entry.html)
+3. 後端伺服器web 响应：[ today_in_history_4web.py ](today_in_history_4web.py ) 中 执行 了@app.route('/') 下的 entry_page()函数，以HTML模版[templates/entry.html](templates/entry.html)
 
 4. 前端浏览器收到web 响应：出现HTML页面有HTML表单的输入 input 类型(type) 为"text"或"date"，变数名称(name)为'date'，[templates/entry.html](templates/entry.html)
 
