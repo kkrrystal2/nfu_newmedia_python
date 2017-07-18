@@ -48,7 +48,7 @@ today_in_history_4web
 
 7. [today_in_history_4web.py ](today_in_history_4web.py ) 中 today_in_history_4web() 函数，把用户提交的数据，以flask 模块request.form['date']取到Web 请求中，HTML表单变数名称日期的值，使用flask模块render_template 函数以[templates/results.html](templates/results.html)模版为基础（输出）。
 
-8. 前端浏览器收到web 响应：模版中[templates/results.html](templates/results.html) 的变数值正确的产生的话，前端浏览器会收到正确响应,显示
+8. 前端浏览器收到web 响应：模版中[templates/results.html](templates/results.html) 的变数值正确的产生的话，前端浏览器会收到正确响应，显示
  信息
 
 
