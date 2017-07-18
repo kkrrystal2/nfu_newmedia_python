@@ -14,7 +14,8 @@ today_in_history_4web
 上行输入月份
 下行输入日期
 ## 输出：
-用户得到输出结果为：历史上的某一天发生了什么(选取前五件事情)
+用户得到输出结果为：历史上的某一天发生的大事件(选取前五件事情)，详见[new_file.py](new_file.py)
+
 ## 从输入到输出，本组作品使用了：
 ### 模块
 * [request](http://www.python-requests.org/en/master/)  
