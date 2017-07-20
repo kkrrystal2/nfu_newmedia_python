@@ -7,8 +7,8 @@ app = Flask(__name__)
 
 @app.route('/content', methods=['POST'])
 def show_content() -> 'html':
-    month = request.form['month']
-    day = request.form['day']
+    month = request.form['user_date'].split("-")[1]
+    day = request.form['user_date'].split("-")[2]
     results = get_data(month,day)
     return render_template('results.html',
                             the_results=results,
