@@ -11,7 +11,7 @@ today_in_history_4web
 		
 
 ## 输入：
-用户输入日期（月、日）：上行输入月份，下行输入日期。在交互界面使用HTML5之[input type date标签]及[type='text'标签]选日期元件(http://www.runoob.com/tags/tag-body.html)
+用户输入日期（月、日）：上行输入月份，下行输入日期。在交互界面使用HTML5之[name='day'标签]及[type='text'标签]选日期元件(http://www.runoob.com/tags/tag-body.html)
 ## 输出：
 用户得到输出结果为：历史上的某一天发生的大事件(选取前五件事情)，详见[new_file.py] (new_file.py)，使用for循环与切片
  
